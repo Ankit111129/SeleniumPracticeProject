@@ -1,14 +1,24 @@
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+import io.qameta.allure.testng.AllureTestNg;
+import jdk.jfr.Description;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
 public class Selenium002 {
+    @Test
+     @Description("Test login with valid credentials")
+    @Severity(SeverityLevel.CRITICAL) @Story("User Login")
 
 
-    public static void main(String[] args) throws InterruptedException {
 
+            public void katlontest() throws InterruptedException {
 
         WebDriver driver = new ChromeDriver();
 
